@@ -1,0 +1,13 @@
+{
+    "name": "chrome-plugin-csdn",
+    "version": "1.0",
+    "description": "去除csdn代码不能复制",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["*://blog.csdn.net/*", "*://pengshiyu.blog.csdn.net/*"],
+            "run_at": "document_idle",
+            "js": ["selectauto.js"]
+        }
+    ]
+}
